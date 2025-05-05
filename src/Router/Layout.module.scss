@@ -1,0 +1,84 @@
+@import "../styles/variables.scss";
+
+header {
+    padding: 30px 60px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $color_line;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+    .heding_link{
+        display: flex;
+        align-items: center;
+    
+        gap: 10px;
+    
+        .icon_chord {
+            SVG {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    
+        .heding{
+            display: grid;
+            margin-top: -5px;
+    
+            .heding_up{
+                font-size: 24px;
+                font-weight: 900;
+    
+                margin-bottom: -4px;
+            }
+            .heding_down{
+                color: $color_prime;
+            }
+        }
+    }
+    .input{
+        background-color: $background_input_value;
+    }
+
+    .input{
+        position: relative;
+        width: 55vw;
+        border-radius: $border_radius;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        .icon_loupe{
+            z-index: 100;
+            margin-bottom: -4px;
+            SVG {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .input_value {
+            position: absolute;
+            padding-left: 40px;
+            left: 5px;
+            height: 90%;
+            width: calc(100% - 50px);
+        }
+    }
+    .auth_button {
+        padding: 14px 22px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid $color_prime_orang;
+        border-radius: $border_radius;
+        .icon_persone{
+            margin-bottom: -4px;
+        }
+        .auth_name {
+            color: $color_prime_orang;
+        }
+    }
+}
+
+.Outlet {
+    padding: 0 60px;
+}
