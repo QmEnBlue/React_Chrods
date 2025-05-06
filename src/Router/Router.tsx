@@ -7,7 +7,10 @@ import { Home } from "../pages/home/home"
 export const RouterPages = () => {
     return(
         <Routes>
-            <Route path="/Auth" element={<AuthPage/>}/>
+            <Route path="/Auth" element={<AuthPage/>}>
+                <Route path="login" element={<AuthPage/>}/>
+                <Route path="registration" element={<AuthPage/>}/>
+            </Route>
             <Route path="/" element={<Layout/>}>
                 <Route index element={<Main/>}/>
                 <Route path="Home" element={<Home/>}/>
