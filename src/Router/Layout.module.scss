@@ -6,7 +6,7 @@ header {
     border-bottom: 1px solid $color_line;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 110px;
 
     .heding_link{
         display: flex;
@@ -64,6 +64,7 @@ header {
         }
     }
     .auth_button {
+        cursor: pointer;
         padding: 14px 22px;
         display: flex;
         align-items: center;

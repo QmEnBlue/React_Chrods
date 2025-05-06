@@ -7,10 +7,10 @@ import { Home } from "../pages/home/home"
 export const RouterPages = () => {
     return(
         <Routes>
+            <Route path="/Auth" element={<AuthPage/>}/>
             <Route path="/" element={<Layout/>}>
                 <Route index element={<Main/>}/>
                 <Route path="Home" element={<Home/>}/>
-                <Route path="Auth" element={<AuthPage/>}/>
             </Route>
         </Routes>
     )

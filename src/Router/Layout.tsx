@@ -28,14 +28,16 @@ export const Layout = () => {
                     </span>
                     <input type="text" placeholder="Поиск песни..." className={s.input_value}/>
                 </span>
-                <button className={s.auth_button}>
-                    <span className={s.icon_persone}>
-                        <GlobalSvgSelector id="persone"/>
-                    </span>
-                    <span className={s.auth_name}>
-                        Войти
-                    </span>
-                </button>
+                <Link to="/auth">
+                    <button className={s.auth_button}>
+                        <span className={s.icon_persone}>
+                            <GlobalSvgSelector id="persone"/>
+                        </span>
+                        <span className={s.auth_name}>
+                            Войти
+                        </span>
+                    </button>
+                </Link>
             </header>
             <div className={s.Outlet}>
                 <Outlet/>
